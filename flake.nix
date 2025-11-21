@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf-flake = {
-      url = "github:brbarnhart/nvf-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     hyprland.url = "github:hyprwm/Hyprland";
     hyprcursor-phinger.url = "github:jappie3/hyprcursor-phinger";
     split-monitor-workspaces = {

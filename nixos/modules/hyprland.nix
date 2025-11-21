@@ -28,12 +28,6 @@
       nwg-displays
 
       phinger-cursors
-
-      # Screenshot utilities
-      grim
-      slurp
-      wl-clipboard
-      swappy
     ];
 
     home.pointerCursor = {

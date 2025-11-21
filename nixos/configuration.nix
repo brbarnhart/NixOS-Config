@@ -4,7 +4,6 @@
 
 let
   system = "x86_64-linux";
-  nvf = inputs.nvf-flake.packages.${system}.default;
 in
 {
   ###--------General Nix Settings--------###
@@ -55,8 +54,6 @@ in
       ./home-modules/steam_launch_opts.nix
     ];
     home.packages = [ pkgs.atool pkgs.httpie ];
-  
-
 
     # The state version is required and should stay at the version you
     # originally installed.
@@ -105,32 +102,43 @@ in
   environment.systemPackages = with pkgs; [
     anki
     brave
-    wezterm
-    zotero
-    devenv
-    stow
-    efibootmgr
-    prismlauncher
-    steam-run
-    protonup
-    discord
-    usbutils
-    killall
-    gale
-    gparted
     obsidian
-    xournalpp
-    zed-editor
+    protonup
     nss
+    zotero
+
+    # Games
+    discord
+    gale
+    prismlauncher
+
+    # Coding
+    devenv
+    rstudio
+    wezterm
+    zed-editor
+
+    # System utilities
+    efibootmgr
+    gparted
+    killall
+    steam-run
+    stow
     udiskie
-    #yazi
+    usbutils
 
     # Engineering
-    prusa-slicer
-    orca-slicer
+    ergogen
     freecad
     kicad
-    ergogen
+    orca-slicer
+    prusa-slicer
+
+    # Screenshot utilities
+    grim
+    slurp
+    wl-clipboard
+    swappy
   ];
 
 }
