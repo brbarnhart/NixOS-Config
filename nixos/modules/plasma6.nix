@@ -25,7 +25,6 @@
     baloo                  # file indexing/search (big resource hog)
     k3b                    # CD burning
     kwalletmanager
-    spectacle              # screenshot tool
     print-manager
     discover               # software center
     packagekit-qt

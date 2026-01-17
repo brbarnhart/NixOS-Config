@@ -126,6 +126,7 @@ in
     stow
     udiskie
     usbutils
+    popsicle
 
     # Engineering
     ergogen
